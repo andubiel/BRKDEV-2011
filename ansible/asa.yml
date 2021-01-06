@@ -1,0 +1,44 @@
+---
+- name: configure asa agentless SSL vpn in AWS
+  hosts: asa
+  connection: network_cli
+  gather_facts: no
+  become: yes
+  become_method: enable
+  tasks:  
+  
+  - name: configure Http
+    cisco.asa.asa_config:
+      lines:
+        - http server enable
+        - http 0.0.0.0 0.0.0.0 management
+
+  - name: username password for SSL
+    cisco.asa.asa_config:
+      lines:
+        - username {{username}} password {{password}} privilege 15
+        
+  - name: webvpn
+    cisco.asa.asa_config:
+      lines:
+        - enable management
+      parents:
+      - webvpn
+
+  - name: tunnel group
+    cisco.asa.asa_config:
+      lines:
+        - tunnel-group cleur type remote-access
+      save: yes
+      
+      
+  
+
+  
+    
+
+
+      
+
+        
+        
