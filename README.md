@@ -1,6 +1,4 @@
 # BRKDEV-2011
-
-SSHLibrary
 ===============
 
 .. contents::
