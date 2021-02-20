@@ -28,28 +28,28 @@ Installation
 ------------
 This Demo requires a python3 virtual environement to run pythonic tools.
 
-   $ pip install virtualenv
-   $ virtualenv venv
-   $ source bin/activate
+      $ pip install virtualenv
+      $ virtualenv venv
+      $ source bin/activate
    
    
 Install Ansible and AWS CLI from the activated virtual environemnt.
 
-   $ pip install ansible
+      $ pip install ansible
 
 
 The EC2 CLI tool is required for Terrafrom to log into AWS_::
 
-   $ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-   $ sudo installer -pkg AWSCLIV2.pkg -target /
+      $ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+      $ sudo installer -pkg AWSCLIV2.pkg -target /
 
 Configure your own AWS credentials:
 
-   $ aws configure
-   AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
-   AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-   Default region name [None]: us-west-2
-   Default output format [None]: json
+      $ aws configure
+      AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+      AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+      Default region name [None]: us-west-2
+      Default output format [None]: json
    
 Install Terraform:
 
