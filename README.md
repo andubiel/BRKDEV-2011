@@ -113,5 +113,22 @@ Make sure to activate python virttual environment.
       $ terraform apply -auto-approve
       
       
+Review Standard Output for internal IP address of INGNX service. Note, scroll the terminal up. 
+      
+      null_resource.kubectl_pods (local-exec): NAME                     READY   STATUS    RESTARTS   AGE   IP           NODE                                             NOMINATED NODE   READINESS GATES
+      null_resource.kubectl_pods (local-exec): nginx-587b5c4b5c-hswpd   1/1     Running   0          31s   10.0.1.127<----Change this IP
+
+Review output for ASAv Web VPN Ip address
+
+      webvpn_ip = 13.52.54.170<----Change this IP
+      
+Validate the Demo
+------------
+Connect to webvpn IP portal to access NGINX.
+Ignore certificate warnings
+webvpn = admin/C!sc0123
+
+      
+      
      
     
