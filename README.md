@@ -106,9 +106,11 @@ Edit ami, key_name, vpc_id, and subnet_id
 Running the Demo
 ------------
 
+Make sure to activate python virttual environment.
+
       $ cd eks/
       $ terraform plan
-      $ terraform apply
+      $ terraform apply -auto-approve
       
       
      
