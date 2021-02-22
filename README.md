@@ -53,6 +53,16 @@ Configure your own AWS credentials:
    
 Install Terraform:
 
+      $ git clone https://github.com/hashicorp/terraform.git
+      $ cd terraform
+      $ go install
+      $ echo $PATH
+      $ mv ~/Downloads/terraform /usr/local/bin/
+      $ terraform --version
+      
+      
+      
+
    
    
    
