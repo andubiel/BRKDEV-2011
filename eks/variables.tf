@@ -11,7 +11,7 @@ variable "instance_type" {
   default = "c4.large"
 }
 variable "key_name" {
-  default = "asassl"
+  default = "your-key"
 }
 variable "subnet_id" {
   default = "subnet-your subnet"
