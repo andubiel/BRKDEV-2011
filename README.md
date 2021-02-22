@@ -60,19 +60,18 @@ Install Terraform:
       $ mv ~/Downloads/terraform /usr/local/bin/
       $ terraform --version
       
-      
-      
-
-   
-   
-   
+Clone files from repo
+------------
 
 
 
 
-Alternatively you can download the source distribution from PyPI_, extract
-it, and install it using one of the following depending are you using
-Python or Jython::
+Prepare Immuttable Infrastrucutre Demo
+------------
 
-    python setup.py install
-    jython setup.py install
+Glean VPC details 
+Using AWS EC2 CLI learn the default VPC id and Subnet
+
+
+    aws ec2 describe-subnets
+    
