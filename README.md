@@ -79,12 +79,37 @@ Using AWS EC2 CLI learn the default VPC id and Subnet
     $ aws ec2 describe-subnets
 
 
-Configure varables for Demo
+Configure variables for Demo
 ------------
 
     $ vi eks/variables.tf
-Edit SSHid vpcID and SubnetId
+Edit ami, key_name, vpc_id, and subnet_id
 
+     variable "region" {
+        default = "us-west-1"
+      }
+      variable "az"{
+        default = ["us-west-1b","us-west-1c"]
+      }
+      variable "ami" {
+        default = "ami-your ami"
+      }
+      variable "vpc_id" {
+        default = "add your default vpc"
+      }
+      variable "key_name" {
+        default = "your-key"
+      }
+      variable "subnet_id" {
+        default = "subnet-your subnet"
 
+Running the Demo
+------------
+
+      $ cd eks/
+      $ terraform plan
+      $ terraform apply
+      
+      
      
     
