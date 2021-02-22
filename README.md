@@ -15,12 +15,7 @@ The demo includes the following components:
 - Terraform
 - Ansible
 
-.. image:: https://img.shields.io/pypi/l/robotframework-sshlibrary.svg
-   :target: http://www.apache.org/licenses/LICENSE-2.0
-
-.. image:: https://api.travis-ci.org/robotframework/SSHLibrary.png
-   :target: http://travis-ci.org/robotframework/SSHLibrary
-
+![Demo](https://github.com/andubiel/BRKDEV-2011/blob/main/images/Screen%20Shot%202021-02-21%20at%2010.11.08%20PM.png)
 
 Installation
 ------------
