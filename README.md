@@ -19,7 +19,7 @@ The demo includes the following components:
 
 The demo includes the following automation workflow:
 
-![Workflow](https://github.com/andubiel/BRKDEV-2011/blob/main/images/Screen%20Shot%202021-02-21%20at%2010.11.08%20PM.png)
+![Workflow](https://github.com/andubiel/BRKDEV-2011/blob/main/images/Screen%20Shot%202021-02-21%20at%2010.15.52%20PM.png)
 
 Installation
 ------------
