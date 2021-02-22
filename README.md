@@ -128,8 +128,13 @@ Connect to webvpn IP portal to access NGINX.
 Ignore certificate warnings
 webvpn = admin/C!sc0123
 
-  
+1) Access the WebVPN and login
 ![Access Webvpn](https://github.com/andubiel/BRKDEV-2011/blob/main/images/Screen%20Shot%202021-02-21%20at%209.55.06%20PM.png)
+
+![Login Webvpn](https://github.com/andubiel/BRKDEV-2011/blob/main/images/Screen%20Shot%202021-02-21%20at%209.55.16%20PM.png)
+
+2) Connect to NGINX internal IP adddress
+![Connect](https://github.com/andubiel/BRKDEV-2011/blob/main/images/Screen%20Shot%202021-02-21%20at%209.53.17%20PM.png)
 
 
       
