@@ -17,6 +17,10 @@ The demo includes the following components:
 
 ![Demo](https://github.com/andubiel/BRKDEV-2011/blob/main/images/Screen%20Shot%202021-02-21%20at%2010.11.08%20PM.png)
 
+The demo includes the following automation workflow:
+
+![Workflow]()
+
 Installation
 ------------
 This Demo requires a python3 virtual environement to run pythonic tools.
