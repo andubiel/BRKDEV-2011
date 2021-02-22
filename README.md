@@ -105,9 +105,22 @@ Edit ami, key_name, vpc_id, and subnet_id
 Running the Demo
 ------------
 
-Make sure to activate python virttual environment.
+Make sure to activate the python virtual environment before running terraform or ansible.
 
       $ cd eks/
+      $ tree
+            .
+            ├── ec2.tf #Configures ASAv VM and Ansible provisioner for post boot configuration
+            ├── eks-cluster.tf #Configures AWS EKS Kubernetes cluster
+            ├── kubernetes.tf #Configures Kubernetes credentials
+            ├── nginx-deployment.yaml #Configures Kubernetes NGINX delpoyment 
+            ├── nginx-service.yaml #Configures service port for NGINX
+            ├── outputs.tf #Screen output such as WebVPN IP Address
+            ├── security-groups.tf #Configures various seecurity groups
+            ├── variables.tf #Populates variables for terraform .tf config files
+            ├── vpc-peer.tf #Configures routing beetween EKS cluster VPC and Default VPC 
+            └── vpc.tf #Configures new VPC for Kubernetes cluster
+        
       $ terraform plan
       $ terraform apply -auto-approve
       
