@@ -1,8 +1,6 @@
 # BRKDEV-2011
 ===============
 
-.. contents::
-
 Introduction
 ------------
 
@@ -63,15 +61,30 @@ Install Terraform:
 Clone files from repo
 ------------
 
-
-
+      $ git clone https://github.com/andubiel/BRKDEV-2011.git
+      $ cd BRKDEV-2011.git
+      
 
 Prepare Immuttable Infrastrucutre Demo
 ------------
 
-Glean VPC details 
+1) If you haven't done so already use AWS portal to create a private key for SSH to AWS VMs and save to your laptop.
+ 
+2) Prepare a new image for ASAv VMs
+From the us-west-1 launch an ASAv image from the AWS marketplace. Launch the image and create a password for the admin account. Save this VM as a new image. This step is required to avoid interactive responces during AWSv bootstrapping later.
+
+3) Glean VPC details 
 Using AWS EC2 CLI learn the default VPC id and Subnet
 
+    $ aws ec2 describe-subnets
 
-    aws ec2 describe-subnets
+
+Configure varables for Demo
+------------
+
+    $ vi eks/variables.tf
+Edit SSHid vpcID and SubnetId
+
+
+     
     
