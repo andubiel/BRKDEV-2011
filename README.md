@@ -120,7 +120,17 @@ Make sure to activate the python virtual environment before running terraform or
             ├── variables.tf #Populates variables for terraform .tf config files
             ├── vpc-peer.tf #Configures routing beetween EKS cluster VPC and Default VPC 
             └── vpc.tf #Configures new VPC for Kubernetes cluster
-        
+            
+      $ cd ../ansible
+      $ tree
+            .
+            ├── ansible.cfg #Default settingd
+            ├── asa.yml #Playbook to configure WebVPN settings
+            ├── group_vars 
+            │   ├── asa.yml #Variables tto ASAv configuration
+            └── hosts #Dynamic Inventory update to AWS VM for ASAv
+            
+      $ cd ../eks 
       $ terraform plan
       $ terraform apply -auto-approve
       
