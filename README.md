@@ -149,6 +149,10 @@ webvpn = admin/C!sc0123
 2) Connect to NGINX internal IP adddress
 ![Connect](https://github.com/andubiel/BRKDEV-2011/blob/main/images/Screen%20Shot%202021-02-21%20at%209.55.16%20PM.png)
 
+Cleanup the Demo
+------------
+
+      $ terraform destroy -auto-approve
       
       
      
