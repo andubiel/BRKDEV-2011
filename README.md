@@ -6,12 +6,12 @@
 Introduction
 ------------
 
-This repo suppliments the BRKDEEV-2011 CLUS session. This immmutable cloud infrastructure demo focuses on remote access tto a dev/test environment with Terraform and Ansible orchestration.
+This repo supplements the BRKDEV-2011 CLUS session. This immmutable cloud infrastructure demo focuses on remote access to a dev/test environment with Terraform and Ansible orchestration.
 
 The demo includes the following components:
 
 - AWS tenant
-- AWS EKS (kubenetes) cluster
+- AWS EKS (kubernetes) cluster
 - NGINX web service
 - Cisco ASAv web vpn
 - Terraform
@@ -25,7 +25,7 @@ The demo includes the following automation workflow:
 
 Installation
 ------------
-This Demo requires a python3 virtual environement to run pythonic tools.
+This Demo requires a python3 virtual environment to run pythonic tools.
 
       $ pip install virtualenv
       $ virtualenv venv
@@ -37,7 +37,7 @@ Install Ansible and AWS CLI from the activated virtual environemnt.
       $ pip install ansible
 
 
-The EC2 CLI tool is required for Terrafrom to log into AWS_::
+The EC2 CLI tool is required for Terraform to log into AWS_::
 
       $ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
       $ sudo installer -pkg AWSCLIV2.pkg -target /
@@ -66,16 +66,16 @@ Clone files from repo
       $ cd BRKDEV-2011.git
       
 
-Prepare Immuttable Infrastrucutre Demo
+Prepare Immutable Infrastructure Demo
 ------------
 
-1) If you haven't done so already use AWS portal to create a private key for SSH to AWS VMs and save to your laptop. Copy the .pem file to both tthe ansible and eks directories on your laptop.
+1) If you haven't done so already, use AWS portal to create a private key for SSH to AWS VMs, and save it to your laptop. Copy the .pem file to both the ansible and eks directories on your laptop.
  
 2) Prepare a new image for ASAv VMs
 From the us-west-1 launch an ASAv image from the AWS marketplace. Launch the image and create a password for the admin account. Save this VM as a new image. This step is required to avoid interactive responces during AWSv bootstrapping later.
 
 3) Glean VPC details 
-Using AWS EC2 CLI learn the default VPC id and Subnet
+Using AWS EC2 CLI, learn the default VPC id and Subnet
 
     $ aws ec2 describe-subnets
 
